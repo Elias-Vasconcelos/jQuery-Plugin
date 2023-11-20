@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'IM Fell French Canon';
 }
 body{
     background: #C3CCC2;
@@ -10,15 +11,25 @@ body{
 header{
     background: #7DB97C;
     padding-top: 16px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+header #Logo{
+    max-width: 90px;
+    width: 100%;
+    max-height: 75px;
+    height: 100%;
+    padding-bottom: 10px;
 }
 header img{
     margin-left: 20px;
-    
 }
 .Hconteiner{
     max-width: 1440px;
     width: 100%;
-    max-height: 112px;
+    max-height: 65px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -26,6 +37,88 @@ header img{
     font-weight: bold;
     padding-bottom: 16px;
 }
+.Hconteiner button{
+    height: 70px;
+    width: 95px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 500PX;
+
+}
+.Hconteiner button img{
+    height: 60PX;
+    width: 50PX;
+    margin-top: 7px;
+}
+
+.Cadastre-se{
+    max-width: 1300px;
+    width: 100%;
+    height: 628px;
+    margin: 100px 250px 0px 120px;
+    display: flex;
+    margin-left: 300px;
+}
+
+.Apresentaçao{
+    width: 500px;
+    height: 500px;
+    margin: 0 30px 50px 600px;
+    position: absolute;
+}
+.Apresentaçao h2{
+    padding: 20px 30px 20px 85px;
+    font-size: 60px;
+}
+.Apresentaçao p{
+    align-items: center;
+    display: flex;
+}
+
+
+
+.Cadastro{
+    background: #0F5649;
+    width: 470px;
+    height: 630px;
+    border-radius: 44px;
+}
+.Cadastro button{
+    border-radius: 18PX;
+    background: #356C3A;
+    color: #fff;
+    border: none;
+    width: 209px;
+    height: 65px;
+    margin: 45px 0 0 120px;
+    font-size: 25px;
+}
+.title{
+    width: 450px;
+    height: 33px;
+    padding: 54px 120px 70px 120px;
+}
+form h2{
+    font-size: 40px;
+    color: #fff;
+}
+
+form input{
+    display: block;
+    height: 40px;
+    width: 400px;
+    border-radius: 14px;
+    background: #7DB97C;
+    border: none;
+    margin: 21px 0px 0 30px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .Conteiner{
     max-width: 1440px;
     width: 100%;
@@ -58,8 +151,161 @@ header img{
     width: 70px;
     height: 90px;
 }
-#Carrosel img{
-    width: 100%;
-    height: 500px;
+#Carrosel{
     margin-top: 0;
+}
+#Carrosel img{
+    max-width: 410PX;
+    width: 100%;
+    max-height: 240px;
+    height: 100%;
+    margin: 70PX 0PX 50px 400px;
+    position: relative;
+}
+#Carrosel div{
+    display: flex;
+}
+.Text{
+    margin: 120px 351px 69px 840px;
+    position: absolute;
+    width: 396px;
+    height: 183px;
+    text-align: center;
+}
+.ConteinerCarrosel{
+    max-width: 1862px;
+    width: 100%;
+    max-height: 340px;
+    height: 100%;
+}
+.Sobrbre{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+}
+#Hits h2{
+    font-size: 70px;
+    margin: 40px 0 90px 600px;
+    border-radius: 20px;
+    width: 600px;
+    padding-left: 40px;
+}
+#Hits ul li{
+    list-style: none ;
+}
+.Sobrbre img{
+    width: 390px;
+    height: 290px;
+    margin-left: 300px;
+}
+.alinha-Texto{
+    width: 600px;
+    height: 290px;
+    margin-left: 50px;
+    padding: 90px 0 0 0;
+}
+.Display{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+#Comentario{
+    margin: 300px 100px 0 900px;
+    width: 209px;
+    height: 39px;
+    position: absolute;
+    border-radius: 18PX;
+    background: #356C3A;
+    color: #fff;
+    border: none;
+}
+.Feedback{
+    width: 100%;
+    height:500px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+.Feedback h2{
+    font-size: 60px;
+    margin-left: 600px;
+    padding-left: 180px;
+    border-radius: 20px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.Boxcomentario{
+    width: 1116px;
+    height: 500px;
+    margin-left: 300px;
+    background: #1E5703;
+    margin-top: 45px;
+    border-radius: 59px;
+}
+.Boxcomentario h3{
+    margin: 45px 0 30px 200px;
+    padding-left: 250px;
+    font-size: 35px;
+    color: #fff;
+    width: 700px;
+    height: 70px;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+
+}
+.Boxcomentario form{
+    width: 550px;
+    height: 150px;
+    padding-top: 70px;
+}
+.Boxcomentario form input{
+    margin-top: 30px;
+    border: none;
+}
+.Boxcomentario textarea{
+    width: 458px;
+    height: 310px;
+    position: absolute;
+    margin: 35px 0 0px 600px;
+    border-radius: 59px;
+    resize: none;
+}
+.Boxcomentario form button{
+    border-radius: 18PX;
+    background: #356C3A;
+    color: #fff;
+    border: none;
+    width: 209px;
+    height: 25px;
+    margin: 45px 0 0 120px;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: #7DB97C;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    font-size: 20px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+}
+footer ul li a{
+    text-decoration: neno;
+    display: flex;
+    margin-right: 13px;
+}
+footer ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #49EAC3;
 }
