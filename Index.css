@@ -87,6 +87,19 @@ header img{
     height: 630px;
     border-radius: 44px;
 }
+#Cadastro-Completo{
+    border-radius: 18PX;
+    background: #356C3A;
+    color: #fff;
+    border: none;
+    width: 209px;
+    height: 65px;
+    margin: 45px 0 0 120px;
+    font-size: 25px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
 .Cadastro button{
     border-radius: 18PX;
     background: #356C3A;

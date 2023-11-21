@@ -14,8 +14,14 @@ $(document).ready(function(){
 
     $('form').validate({
         submitHandler: function(form){
-            $('.Cadastro').fadeOut();
+            $('.Cadastro').fadeOut(500);
+            $('#Cadastro-Completo').fadeIn(2000);
         },
+    })
+    
+    $('#Cadastro-Completo').on('click', function(){
+        $('.Cadastro').fadeIn(2000);
+        $('#Cadastro-Completo').fadeOut();
     })
 
     $('.Conteiner a').on('click', function(){
